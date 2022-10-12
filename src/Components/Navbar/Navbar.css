@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap");
+
+/* Navbar */
+
+.navbar {
+    background-color: #212123;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav {
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav>a {
+    text-decoration: none;
+}
+
+.header {
+    height: 7rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #ff0030;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+    .logo {
+        font-size: 1.7rem;
+    }
+}

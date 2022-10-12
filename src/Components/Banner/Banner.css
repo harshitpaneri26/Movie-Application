@@ -1,0 +1,61 @@
+.cardBanner {
+    padding: 10rem 0px 2rem 5rem;
+    width: 40%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-weight: 400;
+}
+
+.card-Container>h1 {
+    font-weight: 600;
+}
+
+.cardtext {
+    font-size: 1.1rem;
+    text-align: justify;
+    padding: 1.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.cardBanner::before {
+    content: "";
+    background: url("https://cdn.suwalls.com/wallpapers/movies/batman-the-dark-knight-rises-14655-1920x1200.jpg") no-repeat center center/cover;
+    margin-top: 3rem;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+    box-shadow: inset 2px 2px 60px 10px black;
+}
+
+@media screen and (max-width: 900px) {
+    .cardBanner {
+        height: 2rem;
+        width: 100%;
+        padding: 5rem 0px 4rem 1rem;
+    }
+    .cardBanner::before {
+        height: 20rem;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .cardtext {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    .cardtext {
+        width: 36rem;
+        text-align: center;
+    }
+}

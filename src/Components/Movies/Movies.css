@@ -1,0 +1,84 @@
+/* primary-container */
+
+body {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin-top: 4rem;
+    padding-top: 10rem;
+}
+
+.container>h1 {
+    text-align: center;
+}
+
+.primary-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* Cards */
+
+.Card {
+    margin: 2rem;
+    width: 18rem;
+    color: #f1f1f1;
+    width: 20rem;
+    height: 26rem;
+    border: none;
+    background-color: transparent;
+    box-shadow: 3px 5px 6px 4px #212121;
+}
+
+.card-img {
+    height: 14rem;
+}
+
+.Movie-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Pagination-Section */
+
+.pagination-section {
+    margin-top: 3rem;
+    width: 100%;
+    padding: 3rem;
+    display: grid;
+    place-items: center;
+}
+
+.pagination li {
+    cursor: pointer;
+}
+
+.loader {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-nav {
+    background-color: yellow;
+}
+
+@media screen and (max-width: 500px) {
+    .card-Container>h1 {
+        padding-left: 0.9rem;
+    }
+    .pagination-section {
+        padding: 2rem;
+    }
+    .loader {
+        margin-top: 5rem;
+    }
+}

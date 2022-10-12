@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #28282a;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+
+/* Paginations */
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.7rem;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #28282a;
+    border: var(--bs-pagination-border-width) solid #4f4d4d;
+}
